@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    font-family: 'Raleway', serif;
+    font-size:62.5%;
+}
+
+.wrapper {
+    width: 100%;
+}
+header {
+    width: 75%;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+}@media (max-width: 767px) {
+  .header {
+    height: 66px;
+  }
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+    background: #fafafa;
+}
+
+/*
+ * ナビゲーションメニュー用のスタイル
+ */
+.navbar-default {
+  border-width: 0;
+    background: #fafafa;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-nav > li {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 1.4em;;
+  letter-spacing: .025em; 
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    line-height: 30px;
+  }
+}
+.navbar-default .navbar-toggle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: #fafafa;
+}
+
+.menu-global {
+}
+@media (min-width: 768px) {
+  .menu-global {
+    margin: 20px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .menu-global-main > li {
+    position: relative;
+  }
+  .menu-global-main > li:before {
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -.125em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    content: "/";
+    vertical-align: middle;
+  }
+  .menu-global-main > li:first-child:before {
+    display: none;
+    content: "";
+  }
+}
+
+.site-logo {
+    position: relative;
+    top: 20px;
+}
+.site-logo p {
+    font-family: '游ゴシック';
+    font-size: 1.4em;
+    margin: 0;
+}
+.site-logo img {
+    width: 140px;
+    height: auto;
+    margin: 10px 0 0 0;
+}
+
+.main_contents {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+}
+.present_msg p {
+    font-size: 1.4em;
+}
+
+/* products */
+.grid {
+    background: #fafafa;
+    margin: 0 auto 80px auto;
+    text-align: center;
+    position: relative;
+    left: 10px;
+}
+
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- grid-item ---- */
+figure.grid-item {
+    display: block;
+    width: 330px;
+    height: auto;
+    padding: 7px;
+    position: relative;
+　  overflow: hidden;
+    cursor: pointer;
+}
+figure.grid-item .product_img {
+    display: block;
+    overflow: hidden;
+    color: #fafafa;
+    transition: all .5s ease;
+}
+figure.grid-item .product_img img {
+    display: block;
+    width: 300px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+figure.grid-item figcaption {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    font-size: 1.4em;
+    text-align: center;
+    color: #fafafa;
+    z-index: 100;
+    transition: all .5s ease;
+}
+figure.grid-item figcaption p {
+    color: #fafafa;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+figure.grid-item figcaption .product_name::before {
+    content: '『';
+}
+figure.grid-item figcaption .product_name::after {
+    content: '』';
+}
+figure.grid-item figcaption .product_price {
+    margin-top: 30px;
+}
+figure.grid-item figcaption .product_price::before {
+    content: '¥';
+}
+figure.grid-item figcaption:hover {
+    background: rgba(0,0,0,.7);
+    opacity: 1;
+}
+a.cart_btn {
+    display: block;
+    width: 140px;
+    height: 35px;
+    padding: 7px 0 0 0;
+    text-decoration: none;
+    background: #44c5ff;
+    color: #fafafa;
+    z-index: 10;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+footer .footer_spot {
+    width: 100%;
+}
+footer .sns_area {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+}
+footer .sns_area li {
+    list-style: none;
+    display: block;
+    margin: 0 1.5em;
+}
+footer .sns_area li small {
+    font-size: 1.4em;
+    position: relative;
+    top: 1em;
+}
+footer .sns_area li a img {
+    width: 27px;
+    height: auto;
+}

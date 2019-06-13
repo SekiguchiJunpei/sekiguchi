@@ -1,0 +1,512 @@
+@charset "utf-8";
+@font-face {
+    font-family: "freefont";
+    src: url("../fonts/ipaexg.ttf") format("truetype");
+}
+body {
+    margin: 0 auto;
+    font-family: 'Raleway','freefont', sans-serif;
+    font-size:62.5%;
+    /*background: #fff35d;*/
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+
+/***************************
+    navigation
+****************************/
+.header {}
+.header-container {}
+.navbar-header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header-container {
+    position: relative;
+}
+.navbar-default {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    text-align: center;
+    border: none;
+    background: rgba(0,0,0,0);
+}
+/*.logo_image {
+    margin: 0 40px;
+}*/
+.navbar-default .navbar-nav > li > a {
+    color: #44c5ff;
+    font-size: 1.35em;
+    font-weight: 600;
+    letter-spacing: .025em; 
+    text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+        margin: 10px 0 0 0;
+        color: #fff35d;
+        font-size: 1.15vw;
+        line-height: 30px;
+    }
+}
+/* 背景色 */
+@media (max-width: 768px) {
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        background: rgba(250, 250, 250, 0.7);
+        border: none;
+    }
+}
+.navbar-default .navbar-toggle {
+    margin: 40px 40px 0 0;
+    border: none;
+    transition: all ease .5s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    border: solid 1px #44c5ff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,0);
+}
+/*
+.menu-global-sns {
+    display: flex;
+    justify-content: center;
+}
+.menu-global li a img {
+    width: 20px;
+    height: auto;
+}
+*/
+.navbar-collapse .navbar-nav > li > a {
+    transition: all ease .5s;
+}
+.navbar-collapse .navbar-nav > li > a:hover {
+    color: #2d2c2c;
+}
+
+@media (min-width: 768px) {
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {}
+    .menu-global-main {
+        width: 49%;
+        position: absolute;
+        right: 0;
+        margin: auto;
+        background: #44c5ff;
+    }
+    .menu-global-main > li {
+        position: relative;
+    }
+    .menu-global-main > li:before {
+        position: absolute;
+        top: 1em;
+        bottom: 0;
+        left: -1em;
+        display: block;
+        width: 1em;
+        height: 1em;
+        margin: auto;
+        content: "/";
+        vertical-align: middle;
+        color: #fff35d;
+    }
+    .menu-global-main > li:first-child:before {
+        display: none;
+        content: "";
+    } 
+}
+/* message 
+.gift_message {
+    width: 100px;
+    height: auto;
+    border: solid 1px #2d2c2c;
+}
+h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-bottom: solid 1px #2d2c2c;
+    margin: 0;
+    font-size: 1.87em;
+}
+.message_card_input .gift_message {
+    width: 100%;
+    height: auto;
+    border: solid 1px #2d2c2c;
+    font-size: 1.4em;
+    padding: 4px;
+    margin: 20px auto 40px auto;
+}
+name 
+.name_input_area {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.information_input .name_input_area input[type="text"] {
+    width: 270px;
+    height: 40px;
+    border: solid 1px #2d2c2c;
+    background: #fafafa;
+    font-size: 1.4em;
+    padding-left: 4px;
+}
+
+.name_input_area input {
+    margin-top: 20px;
+}
+.cart_area {
+    width: 40%;
+}*/
+/* address_change 
+.address_change ul {
+    margin: 20px 0;
+}
+.address_change ul li {
+    position: relative;
+    font-size: 1.4em;
+}
+.address_change ul li .address_change_btn {
+    display: none;
+}
+.address_change ul li .address_change_btn {
+    margin: 12px;
+}
+.address_change ul li .address_change_btn + label {
+    margin-right: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+.address_change ul li .address_change_btn + label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #2d2c2c;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.address_change ul li .address_change_btn:checked + label::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #44c5ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3.9px;
+    left: 3.9px;
+}*/
+/* address_input 
+.address_input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.address_input input {
+    width: 270px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 4px;
+    border: solid 1px #2d2c2c;
+    background: #fafafa;
+    font-size: 1.4em;
+}
+
+ tel/mail 
+.tel_mail_input {
+    width: 100%;
+    margin-top: 20px;
+}
+.tel_mail_input input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 4px;
+    border: solid 1px #2d2c2c;
+    font-size: 1.4em;
+}
+.tel_mail_input .mail {
+    margin-bottom: 40px;
+}
+
+ calender 
+.day_input {
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+.day_input .calender {
+    width: 270px;
+    height: 40px;
+    padding-left: 4px;
+    border: solid 1px #2d2c2c;
+    font-size: 1.4em;
+}
+
+cash 
+.cash_input {
+    width: 100%;
+    margin-bottom: 40px;
+    font-size: 1.4em;
+}
+.cash_input label {
+    margin: 20px 0 10px 0; 
+}
+.cash_input .cash_num, .cash_security {
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    border: solid 1px #2d2c2c;
+}
+.cash_input .cash_limit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+.cash_month, .cash_year {
+    width: 250px;
+    height: 40px;
+    margin-right: 20px;
+    padding-left: 4px;
+    border: solid 1px #2d2c2c;
+}
+ button 
+.input_re, .buy_re {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    font-size: 1.4em;
+    transition: all .5s ease;
+}
+.input_re {
+    background: #2d2c2c;
+    color: #fafafa;
+}
+.buy_re {
+    background: #fafafa;
+    border: solid 1px #2d2c2c;
+}
+.input_re:hover {
+    background: #44c5ff;
+}
+.buy_re:hover {
+    background: #44c5ff;
+}*/
+
+/***************************
+    main
+****************************/
+.main {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/***************************
+    会員
+****************************/
+.login_wrap {
+    width: 90%;
+    height: auto;
+    margin: 150px auto 40px auto;
+    font-size: 1.65em;
+    position: relative;
+}
+.login_wrap h3 {
+    margin: 40px 0 10px 0;
+}
+.id_text, .pass_text {
+    width: 100%;
+    border-bottom: solid 1px #2d2c2c;
+}
+.login_btn {
+    display: block;
+    width: 240px;
+    height: 55px;
+    margin: 20px auto 0 auto;
+    background: #2d2c2c;
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    transition: all .5s ease;
+}
+.login_btn:hover {
+    background: #44c5ff;
+}
+
+/***************************
+    会員以外
+****************************/
+.input_wrap {
+    width: 90%;
+    height: auto;
+    margin: 100px auto 70px auto;
+    font-size: 1.65em;
+    position: relative;
+}
+/* 青い枠を消す */
+input[type="text"]:focus {
+  outline: 0;
+}
+input[type="password"]:focus {
+  outline: 0;
+}
+.input_wrap h3 {
+    margin: 40px 0 10px 0;
+}
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: solid 1px #2d2c2c;
+}
+input[type="text"] {
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: solid 1px #2d2c2c;
+}
+
+/***************************
+    ボタン
+****************************/
+.btn_wrap {
+    display: block;
+    margin: 40px auto;
+}
+.check_btn, a.back_btn {
+    display: block;
+    width: 280px;
+    height: 55px;
+    margin: 20px auto 0 auto;
+    background: #2d2c2c;
+    color: #fafafa;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+a.back_btn {
+    padding: 15px 0 0 0;
+}
+.check_btn:hover, a.back_btn:hover {
+    background: #44c5ff;
+}
+input[type="submit"]:focus {
+  outline: 0;
+}
+@media (min-width: 768px) {
+    .main {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    /***************************
+        会員
+    ****************************/
+    .login_wrap {
+        width: 100%;
+        height: auto;
+        font-size: 1.65em;
+        position: relative;
+    }
+    .id_text, .pass_text {
+        width: 49.8%;
+        margin: 0 0 10px 0;
+        border-bottom: solid 1px #2d2c2c;
+    }
+    .login_btn {
+        margin: 20px 0 0 0;
+    }
+    /***************************
+        会員以外
+    ****************************/
+    .input_wrap {
+        width: 100%;
+        height: auto;
+        font-size: 1.65em;
+        position: relative;
+    }
+    textarea {
+        width: 100%;
+    }   
+    input[type="text"] {
+        width: 49.8%;
+        margin: 0 0 10px 0;
+        border-bottom: solid 1px #2d2c2c;
+    }
+    .btn_wrap {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 40px auto 0 auto;
+    }
+}
+
+/***************************
+    footer
+****************************/
+.footer_wrap {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.35em;
+    position: relative;
+    background: #44c5ff;
+}
+.footer_nav {
+    width: 100%;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    .footer_nav_wrap {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+.footer_nav_wrap {
+    width: 50%;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+.footer_wrap img {
+    margin: 0 0 15px 0;
+}
+.footer_nav_wrap li {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+}
+.footer_nav_wrap li a {
+    display: block;
+    padding: 0 15px 15px 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fafafa;
+    transition: all .5s ease;
+}
+.footer_nav_wrap li a:hover {
+    color: #fff35d;
+}
+.footer_wrap small {
+    display: block;
+    color: #fafafa;
+    text-align: center;
+}

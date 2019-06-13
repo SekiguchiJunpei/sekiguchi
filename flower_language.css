@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+body {
+    width: 1080px;
+    margin: 0 auto;
+    background: #fafafa;
+    font-family: 'Raleway', sans-serif;
+    font-size:62.5%;
+}
+ul li {
+    list-style: none;
+}
+a {
+    color: #2d2c2c;
+}
+.wrapper {
+    width: 100%;
+}
+
+/* navigaation */
+.navbar-default {
+    border-width: 0;
+    background: rgba(0,0,0,0);
+    position: relative;
+}
+.navbar-default .navbar-nav > li {
+    font-size: 2em;
+    letter-spacing: .075em;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #44c5ff;
+    text-shadow: 1px 1px 2px rgba(44,44,44,.7);
+    transition: all .5s ease;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #44c5ff;   
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    line-height: 22px;
+  }
+}
+.navbar-default .navbar-toggle {
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .menu-global {
+    margin: 20px 0 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .menu-global-main > li {
+    position: relative;
+  }
+  .menu-global-main > li:before {
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*left: -.425em;*/
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    color: #fafafa;
+    content: "/";
+    vertical-align: bottom;
+  }
+  .menu-global-main > li:first-child:before {
+    display: none;
+    content: "";
+  }
+}
+/* logo */
+.logo {
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    background: #2d2c2c;
+}
+
+/* main */
+.main_contents {
+    width: 100%;
+    background: #F00;
+    margin: 0 auto;
+}
+.grid {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- grid-item ---- */
+.grid-item {
+    width: 100%;
+    height: auto;
+    padding: 7px;
+    margin-bottom: 5px;
+    background: #c5c5c5;
+    float: left;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    overflow: hidden;
+}
+.grid-item a {
+    display: block;
+    overflow: hidden;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+footer .footer_spot {
+    width: 100%;
+    position: relative;
+}
+footer .sns_area {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+}
+footer .sns_area li {
+    list-style: none;
+    display: block;
+    margin: 0 1.5em;
+}
+footer .sns_area li small {
+    font-size: 1.4em;
+    text-align: right;
+    position: relative;
+    top: 1em;
+}
+footer .sns_area li a img {
+    width: 27px;
+    height: auto;
+}

@@ -1,0 +1,83 @@
+@charset "utf-8";
+@font-face {
+    font-family: "freefont";
+    src: url("../fonts/ipaexg.ttf") format("truetype");
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    /*background: #fff35d;*/
+    font: 16px 'Raleway','freefont', sans-serif;
+    font-size:62.5%;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background: url(../images/main-visual.jpg) no-repeat;
+    background-size: cover;
+}
+.login_zone {
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,.85);
+    border-radius: 5px;
+}
+.logo_img {
+    width: 14%;
+    height: auto;
+}
+h1 {
+    margin: 20px 13px 30px auto;
+    font-size: 2.4em;
+}
+table {
+    width: 100%;
+}
+table tr {
+    width: 100%;
+}
+table tr th label {
+    padding: 0 40px 0 0;
+}
+table tr th .text {
+    width: 450px;
+    height: 35px;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 10px;
+    border: solid 1px #2d2c2c;
+    border-radius: 5px;
+    position: relative;
+}
+table tr th .pass_text {
+    position: relative;
+    right: 20px;
+}
+.login_btn {
+    display: block;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    font-size: 1.4em;
+    background: #2d2c2c;
+    color: #fafafa;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.login_btn:hover {
+    background: #44c5ff;
+}

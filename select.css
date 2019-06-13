@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background: #fafafa;
+    font: 16px 'Raleway', sans-serif;
+    font-size:62.5%;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+header {
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 66px;
+  }
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+    background: #fafafa;
+}
+
+.navbar-default {
+  border-width: 0;
+    background: #fafafa;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-nav > li {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-size: 1.4em;;
+  letter-spacing: .025em; 
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    line-height: 30px;
+  }
+}
+.navbar-default .navbar-toggle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: #fafafa;
+}
+
+.menu-global {
+}
+@media (min-width: 768px) {
+  .menu-global {
+    margin: 20px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .menu-global-main > li {
+    position: relative;
+  }
+  .menu-global-main > li:before {
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -.125em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    content: "/";
+    vertical-align: middle;
+  }
+  .menu-global-main > li:first-child:before {
+    display: none;
+    content: "";
+  }
+}
+
+.site-logo {
+    position: relative;
+    top: 20px;
+}
+.site-logo p {
+    font-family: '游ゴシック';
+    font-size: 1.4em;
+    margin: 0;
+}
+.site-logo img {
+    width: 140px;
+    height: auto;
+    margin: 10px 0 0 0;
+}
+
+/****************************************
+select
+******************************************/
+.connection_wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 980px;
+    margin: 40px auto 0 auto;
+}
+.connection_wrap .connection_user {
+    display: block;
+}
+.connection_wrap .connection_user p {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    padding: 144px 20px 0 0;
+    position: relative;
+}
+footer .footer_spot {
+    width: 100%;
+    position: relative;
+}
+footer .sns_area {
+    display: flex;
+    justify-content: flex-end;
+}
+footer .sns_area li {
+    list-style: none;
+    display: block;
+    margin: 0 1.5em;
+}
+footer .sns_area li small {
+    font-size: 1.4em;
+    text-align: right;
+    position: relative;
+    top: 1em;
+}
+footer .sns_area li a img {
+    width: 27px;
+    height: auto;
+}
